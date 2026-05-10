@@ -29,6 +29,7 @@ medan-installer/
 │   ├── assets/                  # Icons, license, branding
 │   └── medan.exe                # Placeholder binary
 │
+├── installer/
 ├── scripts/                     # Build/automation scripts
 ├── docs/                        # Documentation
 │
