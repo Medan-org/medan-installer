@@ -1,0 +1,8 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Id="Medan.PackageManager"
+           Name="Medan Package Manager"
+           Manufacturer="Medan-org"
+           Version="0.1.0">
+    <File Source="medan.exe" />
+  </Package>
+</Wix>
