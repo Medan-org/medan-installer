@@ -29,7 +29,7 @@ medan-installer/
 │   ├── assets/                  # Icons, license, branding
 │   └── medan.exe                # Placeholder binary
 │
-├── installer/
+├── installer/                   # Output folder (empty, tracked with .gitkeep)
 ├── scripts/                     # Build/automation scripts
 ├── docs/                        # Documentation
 │
