@@ -1,0 +1,8 @@
+C:\Users\chidu\Work\Projects\Medan\medan-installer\installer\MedanInstaller.msi
+C:\Users\chidu\Work\Projects\Medan\medan-installer\installer\cab1.cab
+C:\Users\chidu\Work\Projects\Medan\medan-installer\installer\MedanInstaller.wixpdb
+C:\Users\chidu\Work\Projects\Medan\medan-installer\src\obj\Debug\MedanInstaller.wixproj.CoreCompileInputs.cache
+C:\Users\chidu\Work\Projects\Medan\medan-installer\src\obj\Debug\cab1.cab
+C:\Users\chidu\Work\Projects\Medan\medan-installer\src\obj\Debug\MedanInstaller.msi
+C:\Users\chidu\Work\Projects\Medan\medan-installer\src\obj\Debug\MedanInstaller.wixpdb
+C:\Users\chidu\Work\Projects\Medan\medan-installer\src\obj\Debug\MedanInstaller.wixproj.BindTracking-neutral.txt
