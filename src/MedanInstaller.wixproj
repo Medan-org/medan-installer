@@ -1,2 +1,31 @@
 <Project Sdk="WixToolset.Sdk/6.0.0">
+
+  <PropertyGroup>
+    <!-- Product metadata -->
+    <ProductName>Medan</ProductName>
+    <Manufacturer>Medan-org</Manufacturer>
+    <Version>0.1.0</Version>
+
+    <!-- Output MSI name -->
+    <OutputName>MedanInstaller</OutputName>
+
+    <!-- Where the MSI will be placed -->
+    <OutputPath>..\installer\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Main WiX source file -->
+    <WixSource Include="Package.wxs" />
+
+    <!-- Assets (icons, license, etc.) -->
+    <Content Include="assets\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- The Medan CLI binary -->
+    <Content Include="medan.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
