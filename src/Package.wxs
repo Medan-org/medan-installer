@@ -5,8 +5,7 @@
       Manufacturer="Medan-org"
       Version="0.1.0"
       UpgradeCode="8f0c2a4e-1b6d-4c8f-9e3d-6a1b2f4d9981"
-      Language="1033"
-      Platform="x64">
+      Language="1033">
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of Medan is already installed." />
 
@@ -15,12 +14,12 @@
     </StandardDirectory>
 
     <DirectoryRef Id="INSTALLFOLDER">
-      <Component Id="MedanExe" Guid="3d7a1c22-5f44-4b8e-9c0a-2e1f77a4b0c9">
+      <Component Id="MedanExe" Guid="3d7a1c22-5f44-4b8e-9c0a-2e1f77a4b0c9" Win64="yes">
         <File Source="medan.exe" />
       </Component>
     </DirectoryRef>
 
-    <Component Id="AddToPath" Guid="c4b1e8f3-9d22-4a6b-8f11-7a3c9e0d55a2">
+    <Component Id="AddToPath" Guid="c4b1e8f3-9d22-4a6b-8f11-7a3c9e0d55a2" Win64="yes">
       <Environment
           Id="MedanPath"
           Name="PATH"
