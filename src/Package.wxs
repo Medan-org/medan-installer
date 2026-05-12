@@ -1,8 +1,39 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-  <Package Id="Medan.PackageManager"
-           Name="Medan Package Manager"
-           Manufacturer="Medan-org"
-           Version="0.1.0">
-    <File Source="medan.exe" />
+
+  <Package
+      Name="Medan Package Manager"
+      Manufacturer="Medan-org"
+      Version="0.1.0"
+      UpgradeCode="8f0c2a4e-1b6d-4c8f-9e3d-6a1b2f4d9981"
+      Language="1033">
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of Medan is already installed." />
+
+    <StandardDirectory Id="ProgramFilesFolder">
+      <Directory Id="INSTALLFOLDER" Name="Medan" />
+    </StandardDirectory>
+
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Component Id="MedanExe" Guid="3d7a1c22-5f44-4b8e-9c0a-2e1f77a4b0c9">
+        <File Source="medan.exe" />
+      </Component>
+    </DirectoryRef>
+
+    <Component Id="AddToPath" Guid="c4b1e8f3-9d22-4a6b-8f11-7a3c9e0d55a2">
+      <Environment
+          Id="MedanPath"
+          Name="PATH"
+          Value="[INSTALLFOLDER]"
+          Permanent="no"
+          Part="last"
+          Action="set" />
+    </Component>
+
+    <Feature Id="MainFeature" Title="Medan CLI" Level="1">
+      <ComponentRef Id="MedanExe" />
+      <ComponentRef Id="AddToPath" />
+    </Feature>
+
   </Package>
+
 </Wix>
