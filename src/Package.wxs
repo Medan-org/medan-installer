@@ -5,7 +5,8 @@
       Manufacturer="Medan-org"
       Version="0.1.0"
       UpgradeCode="8f0c2a4e-1b6d-4c8f-9e3d-6a1b2f4d9981"
-      Language="1033">
+      Language="1033"
+      Platform="x64">
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of Medan is already installed." />
 
