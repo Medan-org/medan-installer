@@ -11,6 +11,10 @@
 
     <!-- Where the MSI will be placed -->
     <OutputPath>..\installer\</OutputPath>
+
+    <!-- THIS is the fix -->
+    <Platform>x64</Platform>
+    <DefineConstants>Platform=x64</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
